@@ -22,6 +22,9 @@ class Nivel {
 		
 	method jugarNivel() {
 		game.clear()
+		musicaJuego.reproducir()
+
+
 
 
 	}
@@ -47,6 +50,8 @@ class Nivel {
         harry.reiniciarFragmentos()
         visuales.enemigos().forEach({unEnemigo => unEnemigo.reiniciar()})
         game.clear() 
+		musicaJuego.reproducir()
+
 		
 
 	}
@@ -209,3 +214,4 @@ object nivel3 inherits Nivel {
 
 
 }
+
